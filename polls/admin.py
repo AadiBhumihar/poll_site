@@ -18,6 +18,9 @@ class QuestionAdmin(admin.ModelAdmin) :
     inlines = [ChoiceInline] ;
 
     list_display = ('question_text','pub_feild','was_published_recently')
+    list_filter = ['pub_feild']
+    search_fields = ['question_text']
+
 
 
 
